@@ -495,3 +495,59 @@
     font-size: 25px;
   }
 }
+
+/* ENCABEZADO DE SERVICIOS: COMPOSICIÓN EDITORIAL */
+.services-heading {
+  display: grid;
+  grid-template-columns: 1.35fr 0.75fr;
+  align-items: center;
+  gap: 55px;
+  margin-bottom: 38px;
+}
+
+.services-heading h2 {
+  font-size: clamp(48px, 6.5vw, 82px);
+  line-height: 0.98;
+  letter-spacing: -3px;
+  color: #ffffff;
+}
+
+.services-heading h2 em {
+  color: #d8ff38;
+  font-style: normal;
+}
+
+.services-heading .eyebrow {
+  color: #d8ff38;
+  letter-spacing: 3px;
+  font-weight: 800;
+}
+
+.services-intro {
+  max-width: 430px;
+  margin-left: auto;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(23px, 2.7vw, 34px);
+  font-weight: 700;
+  line-height: 1.28;
+  letter-spacing: -0.8px;
+  color: #ffffff;
+}
+
+@media (max-width: 700px) {
+  .services-heading {
+    grid-template-columns: 1fr;
+    gap: 22px;
+    margin-bottom: 25px;
+  }
+
+  .services-heading h2 {
+    font-size: clamp(43px, 11vw, 65px);
+    letter-spacing: -2px;
+  }
+
+  .services-intro {
+    margin-left: 0;
+    font-size: 24px;
+  }
+}
