@@ -182,3 +182,151 @@
     border-width: 4px;
   }
 }
+
+/* NUEVA PRESENTACIÓN DE SERVICIOS */
+.services-showcase {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 45px;
+  margin-top: 55px;
+  padding: 30px 0 60px;
+}
+
+/* Persona con celular */
+.services-person {
+  flex: 1;
+  max-width: 430px;
+}
+
+.services-person img {
+  display: block;
+  width: 100%;
+  max-height: 540px;
+  object-fit: contain;
+  border-radius: 12px;
+}
+
+/* Torre inclinada de servicios */
+.leaning-tower {
+  position: relative;
+  flex: 1;
+  max-width: 430px;
+  padding: 25px 20px 0;
+  transform: rotate(-5deg);
+}
+
+.tower-roof {
+  width: 75%;
+  height: 0;
+  margin: 0 auto;
+  border-left: 45px solid transparent;
+  border-right: 45px solid transparent;
+  border-bottom: 55px solid var(--orange);
+}
+
+.tower-floor {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-height: 65px;
+  margin: 0 auto 7px;
+  padding: 12px 18px;
+  border: 3px solid var(--black);
+  background: var(--cream);
+  box-shadow: 5px 5px 0 var(--black);
+}
+
+.tower-floor span {
+  font-size: 13px;
+  font-weight: 800;
+  color: var(--orange);
+}
+
+.tower-floor h3 {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.floor-one {
+  width: 72%;
+}
+
+.floor-two {
+  width: 80%;
+  background: #ffb7d9;
+}
+
+.floor-three {
+  width: 88%;
+  background: #d8ff38;
+}
+
+.floor-four {
+  width: 94%;
+  background: #a9c6ff;
+}
+
+.floor-five {
+  width: 100%;
+  background: #ffd0a8;
+}
+
+.floor-six {
+  width: 106%;
+  background: #fff;
+}
+
+.tower-base {
+  width: 112%;
+  margin: 14px 0 0 -6%;
+  padding: 14px 8px;
+  background: var(--black);
+  color: #fff;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 3px;
+}
+
+/* Adaptación a celulares */
+@media (max-width: 700px) {
+  .services-showcase {
+    flex-direction: column;
+    gap: 35px;
+    padding: 10px 12px 45px;
+  }
+
+  .services-person {
+    width: 100%;
+    max-width: 340px;
+  }
+
+  .services-person img {
+    max-height: 400px;
+  }
+
+  .leaning-tower {
+    width: 90%;
+    max-width: 390px;
+    flex: auto;
+    padding: 20px 10px 0;
+    transform: rotate(-3deg);
+  }
+
+  .tower-floor {
+    min-height: 58px;
+    padding: 10px 12px;
+    gap: 9px;
+  }
+
+  .tower-floor h3 {
+    font-size: 14px;
+  }
+
+  .tower-base {
+    font-size: 10px;
+    letter-spacing: 2px;
+  }
+}
