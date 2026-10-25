@@ -393,3 +393,103 @@
   color: #d8ff38;
   border: 2px solid #111111;
 }
+
+/* FONDO CREATIVO PARA LA SECCIÓN DE SERVICIOS */
+.services {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background:
+    linear-gradient(
+      115deg,
+      rgba(246, 242, 233, 0.86),
+      rgba(224, 233, 255, 0.76)
+    ),
+    url("images/fondo-servicios.jpg") center / cover no-repeat;
+}
+
+/* Darle más presencia al contenido */
+.services .container {
+  position: relative;
+  z-index: 1;
+}
+
+.services-heading {
+  gap: 45px;
+  align-items: center;
+}
+
+.services-intro {
+  font-size: clamp(27px, 3vw, 38px);
+  line-height: 1.25;
+  font-weight: 700;
+  letter-spacing: -1.2px;
+  font-family: "Space Grotesk", sans-serif;
+  color: #111111;
+  text-wrap: balance;
+}
+
+/* Separar visualmente la composición del fondo */
+.services-showcase {
+  padding: 45px 30px 65px;
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.16);
+}
+
+/* Torre con degradados azules */
+.tower-roof {
+  border-bottom-color: #2457ff;
+}
+
+.tower-floor {
+  background: linear-gradient(115deg, #2457ff 0%, #6c8cff 100%);
+  color: #ffffff;
+}
+
+.tower-floor h3 {
+  color: #ffffff;
+  font-weight: 800;
+}
+
+.tower-floor span {
+  color: #d8ff38;
+}
+
+.floor-two {
+  background: linear-gradient(115deg, #1944d8, #527aff);
+}
+
+.floor-three {
+  background: linear-gradient(115deg, #1237b8, #426aff);
+}
+
+.floor-four {
+  background: linear-gradient(115deg, #2457ff, #829bff);
+}
+
+.floor-five {
+  background: linear-gradient(115deg, #304fe0, #6688ff);
+}
+
+.floor-six {
+  background: linear-gradient(115deg, #1635a5, #4c70ff);
+}
+
+.tower-base {
+  background: #111111;
+  color: #d8ff38;
+}
+
+@media (max-width: 700px) {
+  .services-heading {
+    gap: 20px;
+  }
+
+  .services-showcase {
+    padding: 25px 12px 45px;
+  }
+
+  .services-intro {
+    font-size: 25px;
+  }
+}
