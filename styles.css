@@ -7,7 +7,7 @@
 .nav-wrap{height:78px;display:flex;align-items:center;justify-content:space-between}
 .brand{display:flex;align-items:center;gap:10px;font-size:11px;font-weight:700;letter-spacing:.14em}
 .brand-dot{width:12px;height:12px;background:var(--pink);display:block;border-radius:50%;box-shadow:9px -5px 0 var(--blue),4px 8px 0 var(--lime)}
-.main-nav{display:flex;align-items:center;gap:30px;font-size:12px;font-weight:700}
+.main-nav{display:flex;align-items:center;gap:30px;font-size:16px;font-weight:700}
 .main-nav a{transition:.2s}
 .main-nav a:hover{transform:translateY(-2px)}
 .nav-cta{background:var(--black);color:#fff;padding:10px 17px;border-radius:999px}
