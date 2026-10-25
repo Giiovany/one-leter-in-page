@@ -832,3 +832,61 @@
   position: relative;
   z-index: 1;
 }
+
+/* FOTOGRAFÍA CON ACABADO CINEMATOGRÁFICO */
+.services-person {
+  position: relative;
+  isolation: isolate;
+}
+
+/* Halo luminoso detrás de la fotografía */
+.services-person::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 8% -8%;
+  border-radius: 50%;
+  background: radial-gradient(
+    ellipse,
+    rgba(0, 119, 255, 0.38),
+    rgba(28, 70, 255, 0.12) 45%,
+    transparent 72%
+  );
+  filter: blur(24px);
+}
+
+/* Marco y tratamiento visual */
+.services-person img {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-height: 550px;
+  object-fit: cover;
+  object-position: center;
+  border: 1px solid rgba(115, 198, 255, 0.8);
+  border-radius: 18px;
+  box-shadow:
+    0 0 0 5px rgba(51, 119, 255, 0.08),
+    0 0 28px rgba(0, 119, 255, 0.25),
+    0 25px 55px rgba(0, 0, 0, 0.4);
+  transition:
+    transform 0.4s ease,
+    box-shadow 0.4s ease;
+}
+
+/* Movimiento suave al pasar el cursor */
+.services-person img:hover {
+  transform: translateY(-5px) scale(1.015);
+  box-shadow:
+    0 0 0 5px rgba(51, 119, 255, 0.12),
+    0 0 38px rgba(0, 153, 255, 0.38),
+    0 30px 65px rgba(0, 0, 0, 0.45);
+}
+
+/* Ajuste para celulares */
+@media (max-width: 700px) {
+  .services-person img {
+    max-height: 430px;
+    border-radius: 14px;
+  }
+}
