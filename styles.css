@@ -966,3 +966,27 @@
   text-shadow: 0 0 10px rgba(216, 255, 56, 0.3);
 }
 
+/* ANIMACIÓN SUAVE DE LA TORRE */
+
+@keyframes towerEntrance {
+  from {
+    opacity: 0;
+    transform: translateY(25px) rotate(-4deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) rotate(-4deg);
+  }
+}
+
+.leaning-tower {
+  animation: towerEntrance 1s ease-out both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .leaning-tower {
+    animation: none;
+  }
+}
+
