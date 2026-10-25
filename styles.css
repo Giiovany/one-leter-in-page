@@ -119,8 +119,9 @@
 .card-label{font-size:9px;letter-spacing:.18em;font-weight:700}
 .contact-card h3{font-family:"Space Grotesk",sans-serif;font-size:32px;line-height:1;margin:18px 0 8px}
 .contact-card>p{color:#ddd;font-size:13px;margin-bottom:25px}.full{width:100%}
-.small-note{font-size:10px!important;color:#ddd!important;margin-top:15px}
-footer{background:var(--black);color:#aaa;padding:28px 0;font-size:10px}.footer-grid{display:flex;justify-content:space-between;gap:20px;align-items:center}.footer-grid strong{color:#fff;letter-spacing:.1em}
+.small-note{font-size:10px!important;color:#ddd!important;margin-top:15px}footer{background:var(--black);color:#aaa;padding:28px 0;font-size:10px}
+.footer-grid{display:flex;justify-content:space-between;gap:20px;align-items:center}
+.footer-grid strong{color:#fff;letter-spacing:.1em}
 @media(max-width:850px){.container{width:min(var(--max),calc(100% - 38px))}.menu-toggle{display:block}.main-nav{display:none;position:absolute;top:78px;left:0;right:0;background:var(--cream);flex-direction:column;align-items:stretch;padding:12px 20px;gap:0;border-bottom:1px solid rgba(17,17,17,.1)}.main-nav.open{display:flex}.main-nav a{padding:13px 0;border-bottom:1px solid rgba(17,17,17,.08)}.nav-cta{text-align:center;margin-top:10px}.hero{padding:125px 0 100px;min-height:100svh}.hero h1{font-size:64px}.hero-text{font-size:15px}.hero-sticker{width:105px;height:105px;right:8%;top:auto;bottom:65px;font-size:12px;box-shadow:8px 8px 0 var(--blue)}.hero:before{width:440px;height:440px;right:-260px;top:18%}.hero-shape{width:190px;height:190px;right:-70px;bottom:-65px}.section{padding:85px 0}.intro-grid{grid-template-columns:1fr;gap:25px}.section-main h2,.services-heading h2,.contact h2,.manifesto h2{font-size:47px}blockquote{font-size:20px}.services-heading{grid-template-columns:1fr;gap:30px}.service-grid{grid-template-columns:1fr}.service-card{min-height:260px}.manifesto{min-height:520px}.manifesto-letter{font-size:450px;right:-90px;top:20px}.contact-grid{grid-template-columns:1fr;gap:55px}.contact-card{margin:0 10px 0 0}.footer-grid{flex-direction:column;align-items:flex-start}}
 
 /* Galería experimental de portadas web */
