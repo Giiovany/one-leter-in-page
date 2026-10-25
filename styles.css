@@ -757,3 +757,78 @@
     letter-spacing: 2px;
   }
 }
+
+/* LUCES AMBIENTALES DEL FONDO */
+.services::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(
+      ellipse at 12% 35%,
+      rgba(0, 105, 255, 0.35),
+      transparent 38%
+    ),
+    radial-gradient(
+      ellipse at 88% 60%,
+      rgba(29, 76, 255, 0.3),
+      transparent 36%
+    ),
+    radial-gradient(
+      ellipse at 52% 100%,
+      rgba(0, 198, 255, 0.16),
+      transparent 42%
+    );
+}
+
+/* DESTELLOS DECORATIVOS */
+.services-showcase::before,
+.services-showcase::after {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+  border-radius: 50%;
+  filter: blur(2px);
+}
+
+.services-showcase::before {
+  width: 170px;
+  height: 170px;
+  top: -45px;
+  left: -35px;
+  background: radial-gradient(
+    circle,
+    rgba(0, 153, 255, 0.2),
+    transparent 70%
+  );
+}
+
+.services-showcase::after {
+  width: 220px;
+  height: 220px;
+  right: -55px;
+  bottom: -70px;
+  background: radial-gradient(
+    circle,
+    rgba(68, 90, 255, 0.22),
+    transparent 70%
+  );
+}
+
+/* DETALLES LUMINOSOS EN EL MARCO */
+.services-showcase {
+  overflow: hidden;
+  border-color: rgba(83, 170, 255, 0.65);
+  box-shadow:
+    0 0 25px rgba(0, 110, 255, 0.16),
+    0 0 65px rgba(0, 70, 200, 0.12),
+    inset 0 0 35px rgba(40, 112, 255, 0.09);
+}
+
+.services-person,
+.leaning-tower {
+  position: relative;
+  z-index: 1;
+}
