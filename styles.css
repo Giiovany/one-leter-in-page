@@ -402,10 +402,12 @@
   background:
     linear-gradient(
       115deg,
-      rgba(246, 242, 233, 0.86),
-      rgba(224, 233, 255, 0.76)
+      rgba(2, 10, 35, 0.78),
+      rgba(3, 25, 75, 0.68),
+      rgba(0, 8, 28, 0.82)
     ),
     url("images/fondo-servicios.jpg") center / cover no-repeat;
+  color: #ffffff;
 }
 
 /* Darle más presencia al contenido */
